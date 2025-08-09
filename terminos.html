@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Términos y Condiciones - TechImport Perú. Políticas y condiciones para el uso de nuestros servicios." />
+  <title>TechImport - Términos y Condiciones</title>
+
+  <!-- Favicon y recursos -->
+  <link rel="icon" href="assets/favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+
+<style>
+  .masthead { 
+    position: relative; 
+    background-size: cover; 
+    background-position: center; 
+    color: #fff !important; 
+  }
+  .masthead::before { 
+    content:""; 
+    position:absolute; 
+    inset:0; 
+    background:rgba(0,0,0,0.45); 
+    z-index:1; 
+  }
+  .masthead .container{ position:relative; z-index:2; }
+  .masthead h1, .masthead p { 
+    color: #ffffff; /* Blanco puro */
+    text-shadow: none; /* Sin sombra */
+  }
+  html{ scroll-behavior: smooth; }
+  .fade-in-section{ opacity:0; transform:translateY(20px); transition:opacity .7s ease-out, transform .7s ease-out; will-change:opacity,transform; }
+  .fade-in-section.is-visible{ opacity:1; transform:translateY(0); }
+  .brand-logo { text-align:center; margin:20px 0; }
+  .brand-logo img { max-width:220px; height:auto; }
+  .footer .list-inline a { color:inherit; text-decoration:none; }
+  .footer .list-inline a:hover { text-decoration:underline; }
+  @media (max-width:576px){ .brand-logo img { max-width:160px; } }
+</style>
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">TechImport</a>
+      <a class="btn btn-primary" href="index.html#signup">Catálogo</a>
+    </div>
+  </nav>
+
+  <!-- MASTHEAD -->
+  <header class="masthead text-center">
+    <div class="container">
+      <h1 class="mb-3">Términos y Condiciones</h1>
+      <p>Lea atentamente nuestras políticas antes de usar nuestros servicios.</p>
+    </div>
+  </header>
+
+  <!-- CONTENIDO -->
+  <section class="fade-in-section py-5">
+    <div class="container">
+      <h4 class="fw-bold mb-4">1. Aceptación de los términos</h4>
+      <p>Al acceder y utilizar este sitio web, usted acepta cumplir con estos términos y condiciones. Si no está de acuerdo, le recomendamos no utilizar nuestros servicios.</p>
+
+      <h4 class="fw-bold mt-5 mb-4">2. Uso permitido</h4>
+      <p>El contenido y los recursos ofrecidos son para uso legítimo y autorizado. Queda prohibido su uso para actividades ilícitas o que puedan dañar a terceros.</p>
+
+      <h4 class="fw-bold mt-5 mb-4">3. Propiedad intelectual</h4>
+      <p>Todo el contenido, marcas, logotipos y material gráfico son propiedad de TechImport y están protegidos por las leyes de propiedad intelectual.</p>
+
+      <h4 class="fw-bold mt-5 mb-4">4. Modificaciones</h4>
+      <p>TechImport se reserva el derecho de modificar estos términos en cualquier momento, notificando a los usuarios a través de este mismo sitio.</p>
+
+      <h4 class="fw-bold mt-5 mb-4">5. Contacto</h4>
+      <p>Si tiene alguna duda sobre estos términos, puede escribirnos a <a href="mailto:contacto@techimport.com">contacto@techimport.com</a> o llamarnos al <a href="tel:+51959504194">+51 959 504 194</a>.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-light py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Footer Izquierdo -->
+        <div class="col-lg-6 text-center text-lg-start my-auto">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item"><a href="index.html">Inicio</a></li>
+            <li class="list-inline-item">⋅</li>
+            <li class="list-inline-item"><a href="quienes-somos.html">Quiénes somos</a></li>
+            <li class="list-inline-item">⋅</li>
+            <li class="list-inline-item"><a href="privacidad.html">Privacidad</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Derecho -->
+        <div class="col-lg-6 text-center text-lg-end my-auto">
+          <div class="small text-muted">Tel: <a href="tel:+51959504194">+51 959 504 194</a></div>
+        </div>
+      </div>
+
+      <!-- COPYRIGHT FINAL -->
+      <div class="text-center mt-4">
+        <p class="small mb-1 text-white">© Copyright <strong>TechImport.</strong> All Rights Reserved</p>
+        <p class="small mb-0 text-white">Designed &amp; Developed by <strong>Consultancy</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const els = document.querySelectorAll('.fade-in-section');
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.15 });
+        els.forEach(el => observer.observe(el));
+      } else {
+        els.forEach(el => el.classList.add('is-visible'));
+      }
+    });
+  </script>
+</body>
+</html>
