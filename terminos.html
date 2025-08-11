@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Términos y Condiciones - TechImport Perú. Políticas y condiciones para el uso de nuestros servicios." />
-  <title>TechImport - Términos y Condiciones</title>
+  <meta name="description" content="Términos de uso - TechImport Perú. Detalles sobre cómo utilizamos su información." />
+  <title>TechImport - Términos de uso</title>
 
   <!-- Favicon y recursos -->
   <link rel="icon" href="assets/favicon.ico" />
@@ -14,11 +14,13 @@
   <link href="css/styles.css" rel="stylesheet" />
 
 <style>
+  /* MASTHEAD */
   .masthead { 
     position: relative; 
     background-size: cover; 
     background-position: center; 
     color: #fff !important; 
+    background-image: url('assets/privacy-bg.jpg'); /* Imagen opcional */
   }
   .masthead::before { 
     content:""; 
@@ -29,17 +31,34 @@
   }
   .masthead .container{ position:relative; z-index:2; }
   .masthead h1, .masthead p { 
-    color: #ffffff; /* Blanco puro */
-    text-shadow: none; /* Sin sombra */
+    color: #ffffff;
+    text-shadow: none;
   }
-  html{ scroll-behavior: smooth; }
-  .fade-in-section{ opacity:0; transform:translateY(20px); transition:opacity .7s ease-out, transform .7s ease-out; will-change:opacity,transform; }
-  .fade-in-section.is-visible{ opacity:1; transform:translateY(0); }
-  .brand-logo { text-align:center; margin:20px 0; }
-  .brand-logo img { max-width:220px; height:auto; }
+
+  /* Animación Fade-In */
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    will-change: opacity, transform;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .fade-in-delay-1 { transition-delay: 0.2s; }
+  .fade-in-delay-2 { transition-delay: 0.4s; }
+  .fade-in-delay-3 { transition-delay: 0.6s; }
+  .fade-in-delay-4 { transition-delay: 0.8s; }
+  .fade-in-delay-5 { transition-delay: 1s; }
+
+  /* Footer */
   .footer .list-inline a { color:inherit; text-decoration:none; }
   .footer .list-inline a:hover { text-decoration:underline; }
-  @media (max-width:576px){ .brand-logo img { max-width:160px; } }
+
+  @media (max-width:576px){ 
+    .brand-logo img { max-width:160px; } 
+  }
 </style>
 
 </head>
@@ -56,33 +75,38 @@
   <!-- MASTHEAD -->
   <header class="masthead text-center">
     <div class="container">
-      <h1 class="mb-3">Términos y Condiciones</h1>
-      <p>Lea atentamente nuestras políticas antes de usar nuestros servicios.</p>
+      <h1 class="mb-3">Términos de uso</h1>
+      <p>Conozca cómo utilizamos su información.</p>
     </div>
   </header>
 
+ 
   <!-- CONTENIDO -->
-  <section class="fade-in-section py-5">
+  <section class="py-5">
     <div class="container">
-      <h4 class="fw-bold mb-4">1. Aceptación de los términos</h4>
-      <p>Al acceder y utilizar este sitio web, usted acepta cumplir con estos términos y condiciones. Si no está de acuerdo, le recomendamos no utilizar nuestros servicios.</p>
+      
+      <h4 class="fw-bold mb-4 fade-in-section fade-in-delay-1">1. Aceptación de los términos</h4>
+      <p class="fade-in-section fade-in-delay-1">Al acceder y utilizar nuestro sitio web, usted acepta cumplir con los presentes términos y condiciones, así como con todas las leyes y regulaciones aplicables.</p>
 
-      <h4 class="fw-bold mt-5 mb-4">2. Uso permitido</h4>
-      <p>El contenido y los recursos ofrecidos son para uso legítimo y autorizado. Queda prohibido su uso para actividades ilícitas o que puedan dañar a terceros.</p>
+      <h4 class="fw-bold mt-5 mb-4 fade-in-section fade-in-delay-2">2. Uso permitido</h4>
+      <p class="fade-in-section fade-in-delay-2">Se compromete a utilizar el sitio únicamente con fines legales y de manera que no infrinja los derechos de terceros ni restrinja o inhiba su uso y disfrute.</p>
 
-      <h4 class="fw-bold mt-5 mb-4">3. Propiedad intelectual</h4>
-      <p>Todo el contenido, marcas, logotipos y material gráfico son propiedad de TechImport y están protegidos por las leyes de propiedad intelectual.</p>
+      <h4 class="fw-bold mt-5 mb-4 fade-in-section fade-in-delay-3">3. Propiedad intelectual</h4>
+      <p class="fade-in-section fade-in-delay-3">Todo el contenido de este sitio, incluyendo textos, gráficos, logotipos e imágenes, está protegido por derechos de autor y no puede ser utilizado sin nuestro consentimiento previo por escrito.</p>
 
-      <h4 class="fw-bold mt-5 mb-4">4. Modificaciones</h4>
-      <p>TechImport se reserva el derecho de modificar estos términos en cualquier momento, notificando a los usuarios a través de este mismo sitio.</p>
+      <h4 class="fw-bold mt-5 mb-4 fade-in-section fade-in-delay-4">4. Limitación de responsabilidad</h4>
+      <p class="fade-in-section fade-in-delay-4">No nos hacemos responsables por daños directos, indirectos o incidentales que resulten del uso o la imposibilidad de uso de este sitio web.</p>
 
-      <h4 class="fw-bold mt-5 mb-4">5. Contacto</h4>
-      <p>Si tiene alguna duda sobre estos términos, puede escribirnos a <a href="mailto:contacto@techimport.com">contacto@techimport.com</a> o llamarnos al <a href="tel:+51959504194">+51 959 504 194</a>.</p>
+      <h4 class="fw-bold mt-5 mb-4 fade-in-section fade-in-delay-5">5. Modificaciones</h4>
+      <p class="fade-in-section fade-in-delay-5">Nos reservamos el derecho de modificar estos términos en cualquier momento. Los cambios se publicarán en esta página y entrarán en vigor inmediatamente después de su publicación.</p>
+
+      <h4 class="fw-bold mt-5 mb-4 fade-in-section fade-in-delay-6">6. Contacto</h4>
+      <p class="fade-in-section fade-in-delay-6">Si tiene preguntas sobre estos términos, puede contactarnos a través de <a href="mailto:contacto@techimport.com">contacto@techimport.com</a> o llamando al <a href="tel:+51959504194">+51 959 504 194</a>.</p>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer bg-light py-4">
+  <footer class="footer bg-light py-4 text-primary">
     <div class="container">
       <div class="row">
         <!-- Footer Izquierdo -->
@@ -92,7 +116,7 @@
             <li class="list-inline-item">⋅</li>
             <li class="list-inline-item"><a href="quienes-somos.html">Quiénes somos</a></li>
             <li class="list-inline-item">⋅</li>
-            <li class="list-inline-item"><a href="privacidad.html">Privacidad</a></li>
+            <li class="list-inline-item"><a href="privacidad.html">Política de privacidad</a></li>
           </ul>
         </div>
 

@@ -19,36 +19,55 @@
     <!-- Core theme CSS -->
     <link href="css/styles.css" rel="stylesheet" />
 
-<style>
-  .masthead { 
-    position: relative; 
-    background-size: cover; 
-    background-position: center; 
-    color: #fff !important; 
-  }
-  .masthead::before { 
-    content:""; 
-    position:absolute; 
-    inset:0; 
-    background:rgba(0,0,0,0.45); 
-    z-index:1; 
-  }
-  .masthead .container{ position:relative; z-index:2; }
-  .masthead h1, .masthead p { 
-    color: #ffffff; /* Blanco puro */
-    text-shadow: none; /* Sin sombra */
-  }
-  html{ scroll-behavior: smooth; }
-  .fade-in-section{ opacity:0; transform:translateY(20px); transition:opacity .7s ease-out, transform .7s ease-out; will-change:opacity,transform; }
-  .fade-in-section.is-visible{ opacity:1; transform:translateY(0); }
-  .brand-logo { text-align:center; margin:20px 0; }
-  .brand-logo img { max-width:220px; height:auto; }
-  .footer .list-inline a { color:inherit; text-decoration:none; }
-  .footer .list-inline a:hover { text-decoration:underline; }
-  @media (max-width:576px){ .brand-logo img { max-width:160px; } }
-</style>
+    <style>
+      .masthead { 
+        position: relative; 
+        background-size: cover; 
+        background-position: center; 
+        color: #fff !important; 
+      }
+      .masthead::before { 
+        content:""; 
+        position:absolute; 
+        inset:0; 
+        background:rgba(0,0,0,0.45);    
+        z-index:1; 
+      }
+      .masthead .container{ position:relative; z-index:2; }
+      .masthead h1, .masthead p { 
+        color: #ffffff; 
+        text-shadow: none; 
+      }
+      html{ scroll-behavior: smooth; }
+      .fade-in-section{ 
+        opacity:0; 
+        transform:translateY(20px); 
+        transition:opacity .7s ease-out, transform .7s ease-out; 
+        will-change:opacity,transform; 
+      }
+      .fade-in-section.is-visible{ 
+        opacity:1; 
+        transform:translateY(0); 
+      }
+      .brand-logo { text-align:center; margin:20px 0; }
+      .brand-logo img { max-width:220px; height:auto; }
+      .footer .list-inline a { color:inherit; text-decoration:none; }
+      .footer .list-inline a:hover { text-decoration:underline; }
+      @media (max-width:576px){ .brand-logo img { max-width:160px; } }
 
-
+      /* Estilos como en la imagen */
+      .section-title {
+        font-size: 1.25rem; /* tamaño de título */
+        font-weight: 600; /* negrita moderada */
+        color: #212529; /* negro Bootstrap */
+        margin-bottom: 0.5rem;
+      }
+      .section-text {
+        font-size: 1rem;
+        color: #4a4a4a; /* gris oscuro */
+        line-height: 1.6;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -60,7 +79,7 @@
     </nav>
 
     <!-- Encabezado -->
-    <header class="masthead">
+    <header class="masthead fade-in-section">
       <div class="container">
         <h1>Política de Privacidad</h1>
         <p>En TechImport protegemos tu información y nos comprometemos a garantizar la seguridad y confidencialidad de tus datos personales.</p>
@@ -70,50 +89,50 @@
     <!-- Contenido -->
     <section class="py-5 bg-light">
       <div class="container">
-        <div class="row mb-4">
+        <div class="row mb-4 fade-in-section">
           <div class="col-lg-12">
-            <h2 class="fw-bold">1. Información que recopilamos</h2>
-            <p>Podemos recopilar datos como tu nombre, correo electrónico, número de teléfono y dirección cuando realizas una compra o te registras en nuestro sitio.</p>
+            <h2 class="section-title">1. Información que recopilamos</h2>
+            <p class="section-text">Podemos recopilar datos como tu nombre, correo electrónico, número de teléfono y dirección cuando realizas una compra o te registras en nuestro sitio.</p>
           </div>
         </div>
-        <div class="row mb-4">
+        <div class="row mb-4 fade-in-section">
           <div class="col-lg-12">
-            <h2 class="fw-bold">2. Uso de la información</h2>
-            <p>Usamos tu información para procesar pedidos, mejorar tu experiencia de usuario, enviarte actualizaciones y cumplir con requisitos legales.</p>
+            <h2 class="section-title">2. Uso de la información</h2>
+            <p class="section-text">Usamos tu información para procesar pedidos, mejorar tu experiencia de usuario, enviarte actualizaciones y cumplir con requisitos legales.</p>
           </div>
         </div>
-        <div class="row mb-4">
+        <div class="row mb-4 fade-in-section">
           <div class="col-lg-12">
-            <h2 class="fw-bold">3. Protección de datos</h2>
-            <p>Implementamos medidas de seguridad físicas, electrónicas y administrativas para proteger tus datos contra accesos no autorizados.</p>
+            <h2 class="section-title">3. Protección de datos</h2>
+            <p class="section-text">Implementamos medidas de seguridad físicas, electrónicas y administrativas para proteger tus datos contra accesos no autorizados.</p>
           </div>
         </div>
-        <div class="row mb-4">
+        <div class="row mb-4 fade-in-section">
           <div class="col-lg-12">
-            <h2 class="fw-bold">4. Compartir información</h2>
-            <p>No vendemos ni alquilamos tus datos personales. Solo los compartimos con terceros cuando es necesario para cumplir con servicios solicitados o por ley.</p>
+            <h2 class="section-title">4. Compartir información</h2>
+            <p class="section-text">No vendemos ni alquilamos tus datos personales. Solo los compartimos con terceros cuando es necesario para cumplir con servicios solicitados o por ley.</p>
           </div>
         </div>
-        <div class="row mb-4">
+        <div class="row mb-4 fade-in-section">
           <div class="col-lg-12">
-            <h2 class="fw-bold">5. Tus derechos</h2>
-            <p>Puedes acceder, rectificar o eliminar tus datos personales comunicándote con nuestro equipo de soporte a través del formulario de contacto.</p>
+            <h2 class="section-title">5. Tus derechos</h2>
+            <p class="section-text">Puedes acceder, rectificar o eliminar tus datos personales comunicándote con nuestro equipo de soporte a través del formulario de contacto.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer bg-light">
+    <footer class="footer bg-light py-4 text-primary fade-in-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
             <ul class="list-inline mb-2">
+              <li class="list-inline-item"><a href="index.html">Inicio</a></li>
+              <li class="list-inline-item">⋅</li>
               <li class="list-inline-item"><a href="quienes-somos.html">Quiénes somos</a></li>
               <li class="list-inline-item">⋅</li>
               <li class="list-inline-item"><a href="terminos.html">Términos de uso</a></li>
-              <li class="list-inline-item">⋅</li>
-              <li class="list-inline-item"><a href="privacidad.html">Política de privacidad</a></li>
             </ul>
             <p class="text-muted small mb-4 mb-lg-0">&copy; 2025 TechImport Perú. Todos los derechos reservados.</p>
           </div>
@@ -132,5 +151,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS -->
     <script src="js/scripts.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const els = document.querySelectorAll('.fade-in-section');
+        if ('IntersectionObserver' in window) {
+          const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                obs.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.15 });
+          els.forEach(el => observer.observe(el));
+        } else {
+          els.forEach(el => el.classList.add('is-visible'));
+        }
+      });
+    </script>
   </body>
 </html>
